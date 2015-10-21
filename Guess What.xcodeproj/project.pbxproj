@@ -14,6 +14,7 @@
 		CB6B676C1BD3E3AB0037C6E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6B676A1BD3E3AB0037C6E9 /* LaunchScreen.storyboard */; };
 		CB6B67771BD3E3AB0037C6E9 /* Guess_WhatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B67761BD3E3AB0037C6E9 /* Guess_WhatTests.swift */; };
 		CB6B67821BD3E3AC0037C6E9 /* Guess_WhatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B67811BD3E3AC0037C6E9 /* Guess_WhatUITests.swift */; };
+		CB6B67901BD3E4D70037C6E9 /* whatisinyourmind.png in Resources */ = {isa = PBXBuildFile; fileRef = CB6B678F1BD3E4D70037C6E9 /* whatisinyourmind.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CB6B677D1BD3E3AC0037C6E9 /* Guess WhatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess WhatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6B67811BD3E3AC0037C6E9 /* Guess_WhatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_WhatUITests.swift; sourceTree = "<group>"; };
 		CB6B67831BD3E3AC0037C6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6B678F1BD3E4D70037C6E9 /* whatisinyourmind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whatisinyourmind.png; path = ../whatisinyourmind.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		CB6B67601BD3E3AB0037C6E9 /* Guess What */ = {
 			isa = PBXGroup;
 			children = (
+				CB6B678F1BD3E4D70037C6E9 /* whatisinyourmind.png */,
 				CB6B67611BD3E3AB0037C6E9 /* AppDelegate.swift */,
 				CB6B67631BD3E3AB0037C6E9 /* ViewController.swift */,
 				CB6B67651BD3E3AB0037C6E9 /* Main.storyboard */,
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6B676C1BD3E3AB0037C6E9 /* LaunchScreen.storyboard in Resources */,
+				CB6B67901BD3E4D70037C6E9 /* whatisinyourmind.png in Resources */,
 				CB6B67691BD3E3AB0037C6E9 /* Assets.xcassets in Resources */,
 				CB6B67671BD3E3AB0037C6E9 /* Main.storyboard in Resources */,
 			);

@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess_What" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is in your mind?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXW-FG-OL5">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="whatisinyourmind.png" translatesAutoresizingMaskIntoConstraints="NO" id="a5l-rd-fI3">
+                                <rect key="frame" x="20" y="49" width="169" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="6bY-fl-xCd"/>
+                                    <constraint firstAttribute="width" constant="159" id="VN3-7B-gF9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Think of a number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxP-4l-UPk">
+                                <rect key="frame" x="20" y="161" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRW-Vj-TwE">
+                                <rect key="frame" x="83" y="195" width="46" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEg-QU-3By"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjV-It-9YK">
+                                <rect key="frame" x="58" y="233" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZgN-0c-liO"/>
+                                    <constraint firstAttribute="width" constant="97" id="wQ6-wz-PaV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TjV-It-9YK" firstAttribute="centerX" secondItem="TRW-Vj-TwE" secondAttribute="centerX" id="4IV-fY-PLp"/>
+                            <constraint firstItem="iXW-FG-OL5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ADm-Rm-ewB"/>
+                            <constraint firstItem="HxP-4l-UPk" firstAttribute="top" secondItem="a5l-rd-fI3" secondAttribute="bottom" constant="8" id="JvK-Qy-NZJ"/>
+                            <constraint firstItem="a5l-rd-fI3" firstAttribute="top" secondItem="iXW-FG-OL5" secondAttribute="bottom" constant="8" id="LaA-2X-jJo"/>
+                            <constraint firstItem="HxP-4l-UPk" firstAttribute="centerX" secondItem="a5l-rd-fI3" secondAttribute="centerX" id="VqR-Ah-nd7"/>
+                            <constraint firstItem="TjV-It-9YK" firstAttribute="top" secondItem="TRW-Vj-TwE" secondAttribute="bottom" constant="8" id="dA2-Ll-gmD"/>
+                            <constraint firstItem="iXW-FG-OL5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iAp-ay-Ik8"/>
+                            <constraint firstItem="TRW-Vj-TwE" firstAttribute="top" secondItem="HxP-4l-UPk" secondAttribute="bottom" constant="13" id="sZC-g3-9SK"/>
+                            <constraint firstItem="TRW-Vj-TwE" firstAttribute="centerX" secondItem="HxP-4l-UPk" secondAttribute="centerX" id="xTG-o6-vZi"/>
+                            <constraint firstItem="a5l-rd-fI3" firstAttribute="centerX" secondItem="iXW-FG-OL5" secondAttribute="centerX" id="y5y-pS-TBo"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="TjV-It-9YK" id="DGU-7T-7vl"/>
+                        <outlet property="questionLabel" destination="HxP-4l-UPk" id="6lf-hu-KIE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="232" y="294"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="whatisinyourmind.png" width="300" height="300"/>
+    </resources>
 </document>
